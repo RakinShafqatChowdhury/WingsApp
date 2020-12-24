@@ -199,7 +199,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -238,7 +238,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -284,7 +284,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -323,7 +323,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -369,7 +369,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -408,7 +408,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -454,7 +454,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -493,7 +493,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -540,7 +540,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
@@ -579,7 +579,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="5dp"
                 >
 
                 <LinearLayout
