@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CounterDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/paperfly_logo"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="রিসিভ অর্ডার"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/arrow_right_drawable"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/order_received_drawable" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="মার্চেন্ট রেজিস্ট্রেশন"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/arrow_right_drawable"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/merchant_reg_drawable" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="প্রোডাক্ট হ্যান্ডওভার করুন"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/arrow_right_drawable"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/product_handover_drawable" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="ক্যাশ হ্যান্ডওভার করুন"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/arrow_right_drawable"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/cash_handover_drawable" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="পেন্ডিং মার্চেন্ট"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/arrow_right_drawable"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/pending_merchant_drawable" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

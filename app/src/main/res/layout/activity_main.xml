@@ -126,7 +126,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/green_400"
-                android:onClick="nextActivity"
+                android:onClick="goToDODashboard"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
 
@@ -161,6 +161,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/red_400"
                 app:cardCornerRadius="10dp"
+                android:onClick="goToCounterDashboard"
                 app:cardElevation="10dp">
 
                 <LinearLayout

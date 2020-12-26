@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setTitle("TestPoint");
     }
 
-    public void nextActivity(View view) {
+    public void goToDODashboard(View view) {
         startActivity(new Intent(MainActivity.this,DoDashboardActivity.class));
+    }
+
+    public void goToCounterDashboard(View view) {
+        startActivity(new Intent(MainActivity.this,CounterDashboardActivity.class));
     }
 }
