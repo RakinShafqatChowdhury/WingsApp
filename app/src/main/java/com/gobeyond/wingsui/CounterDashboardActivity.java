@@ -9,6 +9,6 @@ public class CounterDashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.itemview_sla_missed_orders);
+        setContentView(R.layout.itemview_dp2_not_received);
     }
 }
