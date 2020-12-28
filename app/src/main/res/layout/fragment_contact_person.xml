@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewMerReg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".merchant_registration.MerchantRegistrationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvMerchantRegTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Contact Person Details"
+            android:textColor="@color/ETlabel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:orientation="vertical"
+            android:padding="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMerchantRegTitle">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNameMerRegistration"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Contact person name"
+                app:boxStrokeColor="@color/ETlabel"
+                app:endIconMode="clear_text"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/ETbox">
+                <!--app:helperText="@string/helper_email"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNameMerRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAddressMerRegistration"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Designation"
+                app:boxStrokeColor="@color/ETlabel"
+                app:endIconMode="clear_text"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/ETbox">
+                <!--app:helperText="@string/helper_email"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddressMerRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCompanyPhoneMerRegistration"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Company Phone"
+                app:boxStrokeColor="@color/ETlabel"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/ETbox">
+                <!--app:helperText="@string/helper_email"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCompanyPhoneMerRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProductNatureMerRegistration"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:boxStrokeColor="@color/ETlabel"
+                app:endIconMode="clear_text"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/ETbox">
+                <!--app:helperText="@string/helper_email"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etProductNatureMerRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/hiddenLayout"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:visibility="gone">-->
+
+
+            <!--                    <com.google.android.material.textfield.TextInputLayout-->
+            <!--                        android:id="@+id/tilAccNameMerRegistration"-->
+            <!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:hint="@string/account_name"-->
+            <!--                        app:boxStrokeColor="@color/ETlabel"-->
+            <!--                        app:endIconMode="clear_text"-->
+            <!--                        app:helperTextEnabled="true"-->
+            <!--                        app:hintTextColor="@color/ETbox">-->
+            <!--                        &lt;!&ndash;app:helperText="@string/helper_email"&ndash;&gt;-->
+
+            <!--                        <com.google.android.material.textfield.TextInputEditText-->
+            <!--                            android:id="@+id/etAccNameMerRegistration"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:inputType="text" />-->
+            <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                    <com.google.android.material.textfield.TextInputLayout-->
+            <!--                        android:id="@+id/tilAccNumMerRegistration"-->
+            <!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:hint="@string/account_num"-->
+            <!--                        app:boxStrokeColor="@color/ETlabel"-->
+            <!--                        app:endIconMode="clear_text"-->
+            <!--                        app:helperTextEnabled="true"-->
+            <!--                        app:hintTextColor="@color/ETbox">-->
+            <!--                        &lt;!&ndash;app:helperText="@string/helper_email"&ndash;&gt;-->
+
+            <!--                        <com.google.android.material.textfield.TextInputEditText-->
+            <!--                            android:id="@+id/etAccNumMerRegistration"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:inputType="number" />-->
+            <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                    <com.google.android.material.textfield.TextInputLayout-->
+            <!--                        android:id="@+id/tilBankNameMerRegistration"-->
+            <!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:hint="@string/bank_name"-->
+            <!--                        app:boxStrokeColor="@color/ETlabel"-->
+            <!--                        app:endIconMode="clear_text"-->
+            <!--                        app:helperTextEnabled="true"-->
+            <!--                        app:hintTextColor="@color/ETbox">-->
+            <!--                        &lt;!&ndash;app:helperText="@string/helper_email"&ndash;&gt;-->
+
+            <!--                        <com.google.android.material.textfield.TextInputEditText-->
+            <!--                            android:id="@+id/etBankNameMerRegistration"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:inputType="text" />-->
+            <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                    <com.google.android.material.textfield.TextInputLayout-->
+            <!--                        android:id="@+id/tilBranchMerRegistration"-->
+            <!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:hint="@string/branch_name"-->
+            <!--                        app:boxStrokeColor="@color/ETlabel"-->
+            <!--                        app:endIconMode="clear_text"-->
+            <!--                        app:helperTextEnabled="true"-->
+            <!--                        app:hintTextColor="@color/ETbox">-->
+            <!--                        &lt;!&ndash;app:helperText="@string/helper_email"&ndash;&gt;-->
+
+            <!--                        <com.google.android.material.textfield.TextInputEditText-->
+            <!--                            android:id="@+id/etBranchMerRegistration"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:inputType="text" />-->
+            <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                    <com.google.android.material.textfield.TextInputLayout-->
+            <!--                        android:id="@+id/tilRoutingNumRegistration"-->
+            <!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:hint="@string/routing_number"-->
+            <!--                        app:boxStrokeColor="@color/ETlabel"-->
+            <!--                        app:endIconMode="clear_text"-->
+            <!--                        app:helperTextEnabled="true"-->
+            <!--                        app:hintTextColor="@color/ETbox">-->
+            <!--                        &lt;!&ndash;app:helperText="@string/helper_email"&ndash;&gt;-->
+
+            <!--                        <com.google.android.material.textfield.TextInputEditText-->
+            <!--                            android:id="@+id/etRoutingNumRegistration"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:inputType="number" />-->
+            <!--                    </com.google.android.material.textfield.TextInputLayout>-->
+            <!--                </LinearLayout>-->
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

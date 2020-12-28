@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.gobeyond.wingsui.merchant_registration.MerchantRegistrationActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToCounterDashboard(View view) {
-        startActivity(new Intent(MainActivity.this,CounterDashboardActivity.class));
+        startActivity(new Intent(MainActivity.this, MerchantRegistrationActivity.class));
     }
 }

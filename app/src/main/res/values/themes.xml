@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="stepper" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="ms_stepperStyle">@style/DotStepperStyle</item>
+    </style>
+
+    <style name="DotStepperStyle">
+        <item name="ms_stepperType">dots</item>
+        <item name="ms_activeStepColor">@color/ETlabel</item>
+        <item name="ms_inactiveStepColor">@android:color/darker_gray</item>
+        <item name="ms_bottomNavigationBackground">@color/white</item>
+    </style>
 </resources>
