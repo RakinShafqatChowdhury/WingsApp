@@ -28,12 +28,14 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_contact_person, container, false);
     }
 
@@ -60,7 +62,7 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
 
     @Override
     public void onSelected() {
-
+        getActivity().setTitle("Contact Person Details");
     }
 
     @Override

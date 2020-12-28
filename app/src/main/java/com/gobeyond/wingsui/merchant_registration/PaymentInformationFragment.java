@@ -29,12 +29,14 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        getActivity().setTitle("Payment Information");
         return inflater.inflate(R.layout.fragment_payment_information, container, false);
     }
 
@@ -61,7 +63,7 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
 
     @Override
     public void onSelected() {
-
+        getActivity().setTitle("Payment Information");
     }
 
     @Override

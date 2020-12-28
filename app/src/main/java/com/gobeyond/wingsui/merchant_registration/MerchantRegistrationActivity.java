@@ -17,7 +17,6 @@ public class MerchantRegistrationActivity extends AppCompatActivity implements S
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_merchant_registration);
-        setTitle("Merchant Registration");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         StepperLayout mStepperLayout = findViewById(R.id.stepperLayout);
         mStepperLayout.setAdapter(new StepperAdapter(getSupportFragmentManager(), this));
