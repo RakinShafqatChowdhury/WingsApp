@@ -44,7 +44,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="false"
                     android:text="Bkash" />
 
                 <RadioButton
@@ -52,7 +51,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.1"
-                    android:clickable="false"
                     android:text="Rocket" />
 
                 <RadioButton
@@ -60,7 +58,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="false"
                     android:text="Nagad" />
 
                 <RadioButton
@@ -68,7 +65,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".85"
-                    android:clickable="false"
                     android:text="Bank" />
 
                 <RadioButton
@@ -76,7 +72,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.05"
-                    android:clickable="false"
                     android:text="Cheque" />
 
 
