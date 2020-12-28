@@ -1,13 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewMerReg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".merchant_registration.PaymentInformationFragment">
+    android:fillViewport="true"
+    tools:context=".merchant_registration.MerchantRegistrationActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/radioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMerchantRegTitle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <RadioButton
+                    android:id="@+id/payment_bkashRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="Bkash" />
+
+                <RadioButton
+                    android:id="@+id/payment_rocketRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:clickable="false"
+                    android:text="Rocket" />
+
+                <RadioButton
+                    android:id="@+id/payment_nagadRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="Nagad" />
+
+                <RadioButton
+                    android:id="@+id/payment_bankRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:clickable="false"
+                    android:text="Bank" />
+
+                <RadioButton
+                    android:id="@+id/payment_chequeRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.05"
+                    android:clickable="false"
+                    android:text="Cheque" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMerchantRegTitle">
+
+
+                <LinearLayout
+                    android:id="@+id/hiddenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilAccNameMerRegistration"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Account name"
+                        app:boxStrokeColor="@color/ETlabel"
+                        app:endIconMode="clear_text"
+                        app:helperTextEnabled="true"
+                        app:hintTextColor="@color/ETbox">
+                        <!--app:helperText="@string/helper_email"-->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etAccNameMerRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilAccNumMerRegistration"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Account number"
+                        app:boxStrokeColor="@color/ETlabel"
+                        app:endIconMode="clear_text"
+                        app:helperTextEnabled="true"
+                        app:hintTextColor="@color/ETbox">
+                        <!--app:helperText="@string/helper_email"-->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etAccNumMerRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilBankNameMerRegistration"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Bank"
+                        app:boxStrokeColor="@color/ETlabel"
+                        app:endIconMode="clear_text"
+                        app:helperTextEnabled="true"
+                        app:hintTextColor="@color/ETbox">
+                        <!--app:helperText="@string/helper_email"-->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etBankNameMerRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilBranchMerRegistration"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Branch"
+                        app:boxStrokeColor="@color/ETlabel"
+                        app:endIconMode="clear_text"
+                        app:helperTextEnabled="true"
+                        app:hintTextColor="@color/ETbox">
+                        <!--app:helperText="@string/helper_email"-->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etBranchMerRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilRoutingNumRegistration"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Routing number"
+                        app:boxStrokeColor="@color/ETlabel"
+                        app:endIconMode="clear_text"
+                        app:helperTextEnabled="true"
+                        app:hintTextColor="@color/ETbox">
+                        <!--app:helperText="@string/helper_email"-->
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRoutingNumRegistration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvMerchantRegTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Payment Information"
+            android:textColor="@color/ETlabel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
