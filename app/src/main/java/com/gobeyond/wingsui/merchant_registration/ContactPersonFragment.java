@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.stepstone.stepper.BlockingStep;
 import com.stepstone.stepper.StepperLayout;
 import com.stepstone.stepper.VerificationError;
+
+import java.util.regex.Pattern;
 
 public class ContactPersonFragment extends Fragment implements BlockingStep {
 
@@ -66,6 +69,10 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
             return false;
         }else if(TextUtils.isEmpty(etEmail.getText().toString().trim())){
             etEmail.setError("Enter email address");
+            etEmail.requestFocus();
+            return false;
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString().trim()).matches()){
+            etEmail.setError("Enter valid email address");
             etEmail.requestFocus();
             return false;
         }

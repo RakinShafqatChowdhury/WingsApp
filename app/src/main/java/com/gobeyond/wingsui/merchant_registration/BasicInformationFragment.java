@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,6 +85,10 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
             return false;
         }else if(radioGroupBusinessType.getCheckedRadioButtonId()==-1){
             Toast.makeText(requireActivity(), "Select business type", Toast.LENGTH_SHORT).show();
+            return false;
+        }else if(!Patterns.WEB_URL.matcher(etWebsite.getText().toString().trim()).matches()){
+            etWebsite.setError("Enter valid web address");
+            etWebsite.requestFocus();
             return false;
         }
         return true;
