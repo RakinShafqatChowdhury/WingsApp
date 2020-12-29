@@ -40,7 +40,7 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/tilNameMerRegistration"
+                    android:id="@+id/tilContactPersonNameMerRegistration"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,14 +53,14 @@
                     <!--app:helperText="@string/helper_email"-->
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etNameMerRegistration"
+                        android:id="@+id/etContactPersonNameRegistration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/tilAddressMerRegistration"
+                    android:id="@+id/tilDesignationMerRegistration"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,27 +73,27 @@
                     <!--app:helperText="@string/helper_email"-->
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etAddressMerRegistration"
+                        android:id="@+id/etDesignationMerRegistration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/tilCompanyPhoneMerRegistration"
+                    android:id="@+id/tilContactNumberMerRegistration"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:hint="Company Phone"
+                    android:hint="Contact number"
                     app:boxStrokeColor="@color/ETlabel"
                     app:helperTextEnabled="true"
                     app:hintTextColor="@color/ETbox">
                     <!--app:helperText="@string/helper_email"-->
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etCompanyPhoneMerRegistration"
+                        android:id="@+id/etContactNumberMerRegistration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="phone"
@@ -101,7 +101,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/tilProductNatureMerRegistration"
+                    android:id="@+id/tilEmailMerRegistration"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                     <!--app:helperText="@string/helper_email"-->
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etProductNatureMerRegistration"
+                        android:id="@+id/etEmailMerRegistration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress" />
