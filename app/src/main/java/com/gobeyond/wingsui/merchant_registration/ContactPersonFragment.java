@@ -1,24 +1,21 @@
 package com.gobeyond.wingsui.merchant_registration;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.gobeyond.wingsui.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.stepstone.stepper.BlockingStep;
 import com.stepstone.stepper.StepperLayout;
 import com.stepstone.stepper.VerificationError;
-
-import java.util.regex.Pattern;
 
 public class ContactPersonFragment extends Fragment implements BlockingStep {
 
@@ -27,7 +24,6 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
     public ContactPersonFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -54,24 +50,24 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
         etEmail = v.findViewById(R.id.etEmailMerRegistration);
     }
 
-    private Boolean verifyFields(){
-        if(TextUtils.isEmpty(etContactPersonName.getText().toString().trim())){
+    private Boolean verifyFields() {
+        if (TextUtils.isEmpty(etContactPersonName.getText().toString().trim())) {
             etContactPersonName.setError("Enter name");
             etContactPersonName.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etDesignation.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etDesignation.getText().toString().trim())) {
             etDesignation.setError("Enter designation");
             etDesignation.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etContactNumber.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etContactNumber.getText().toString().trim())) {
             etContactNumber.setError("Enter contact number");
             etContactNumber.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etEmail.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etEmail.getText().toString().trim())) {
             etEmail.setError("Enter email address");
             etEmail.requestFocus();
             return false;
-        }else if(!Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString().trim()).matches()){
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString().trim()).matches()) {
             etEmail.setError("Enter valid email address");
             etEmail.requestFocus();
             return false;
@@ -81,7 +77,7 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
 
     @Override
     public void onNextClicked(StepperLayout.OnNextClickedCallback callback) {
-        if(verifyFields()){
+        if (verifyFields()) {
             callback.goToNextStep();
         }
     }

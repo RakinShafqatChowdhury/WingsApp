@@ -17,11 +17,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true"
             android:layout_margin="5dp"
             app:cardCornerRadius="5dp"
-            app:cardElevation="10dp">
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
 
 
             <LinearLayout
@@ -342,10 +342,6 @@
                     android:padding="5dp"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textSize="14dp" />
-
-
-
-
 
 
             </LinearLayout>

@@ -343,19 +343,19 @@
         </androidx.cardview.widget.CardView>
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvMerchantRegTitle"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="28dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Basic Information"-->
-<!--            android:textColor="@color/ETlabel"-->
-<!--            android:textSize="24sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvMerchantRegTitle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="28dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Basic Information"-->
+        <!--            android:textColor="@color/ETlabel"-->
+        <!--            android:textSize="24sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

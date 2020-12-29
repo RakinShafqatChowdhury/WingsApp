@@ -33,7 +33,6 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     }
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +65,7 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     }
 
     private void activeEditTexts(String selectedPaymentMethod) {
-        switch (selectedPaymentMethod){
+        switch (selectedPaymentMethod) {
             case "Bkash":
             case "Rocket":
             case "Nagad":
@@ -102,41 +101,40 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
         }
     }
 
-    private Boolean verifyFields(String paymentMethod){
-        if(paymentMethod.matches("Bkash") || paymentMethod.matches("Rocket") || paymentMethod.matches("Nagad") || paymentMethod.matches("Cheque")){
-            if(etAccName.getText().toString().trim().isEmpty()){
+    private Boolean verifyFields(String paymentMethod) {
+        if (paymentMethod.matches("Bkash") || paymentMethod.matches("Rocket") || paymentMethod.matches("Nagad") || paymentMethod.matches("Cheque")) {
+            if (etAccName.getText().toString().trim().isEmpty()) {
                 etAccName.setError("Enter account name");
                 etAccName.requestFocus();
                 return false;
-            }else if(etAccNumber.getText().toString().trim().isEmpty()){
+            } else if (etAccNumber.getText().toString().trim().isEmpty()) {
                 etAccNumber.setError("Enter account number");
                 etAccNumber.requestFocus();
                 return false;
             }
-        }else if(paymentMethod.matches("Bank")){
-            if(etAccName.getText().toString().trim().isEmpty()){
+        } else if (paymentMethod.matches("Bank")) {
+            if (etAccName.getText().toString().trim().isEmpty()) {
                 etAccName.setError("Enter account name");
                 etAccName.requestFocus();
                 return false;
-            }else if(etAccNumber.getText().toString().trim().isEmpty()){
+            } else if (etAccNumber.getText().toString().trim().isEmpty()) {
                 etAccNumber.setError("Enter account number");
                 etAccNumber.requestFocus();
                 return false;
-            }else if(etBank.getText().toString().trim().isEmpty()){
+            } else if (etBank.getText().toString().trim().isEmpty()) {
                 etBank.setError("Enter bank name");
                 etBank.requestFocus();
                 return false;
-            }else if(etBranch.getText().toString().trim().isEmpty()){
+            } else if (etBranch.getText().toString().trim().isEmpty()) {
                 etBranch.setError("Enter bank name");
                 etBranch.requestFocus();
                 return false;
-            }else if(etRoutingNumber.getText().toString().trim().isEmpty()){
+            } else if (etRoutingNumber.getText().toString().trim().isEmpty()) {
                 etRoutingNumber.setError("Enter bank name");
                 etRoutingNumber.requestFocus();
                 return false;
             }
-        }
-        else {
+        } else {
             Toast.makeText(requireActivity(), "Select payment method", Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -146,7 +144,7 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     @Override
     public void onNextClicked(StepperLayout.OnNextClickedCallback callback) {
 
-        if(verifyFields(selectedPaymentMethod)){
+        if (verifyFields(selectedPaymentMethod)) {
             callback.goToNextStep();
         }
     }

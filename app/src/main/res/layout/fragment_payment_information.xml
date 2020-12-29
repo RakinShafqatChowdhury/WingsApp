@@ -16,8 +16,8 @@
             android:id="@+id/radioLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="5dp"
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -27,9 +27,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:text="Payment Method"
                 android:textSize="16sp"
-                android:layout_marginStart="5dp"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -131,8 +131,8 @@
                             android:id="@+id/etAccNameMerRegistration"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:enabled="false"/>
+                            android:enabled="false"
+                            android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -152,8 +152,8 @@
                             android:id="@+id/etAccNumMerRegistration"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:enabled="false"/>
+                            android:enabled="false"
+                            android:inputType="number" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -173,8 +173,8 @@
                             android:id="@+id/etBankNameMerRegistration"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:enabled="false"/>
+                            android:enabled="false"
+                            android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -194,8 +194,8 @@
                             android:id="@+id/etBranchMerRegistration"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:enabled="false"/>
+                            android:enabled="false"
+                            android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -216,8 +216,8 @@
                             android:id="@+id/etRoutingNumRegistration"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:enabled="false"/>
+                            android:enabled="false"
+                            android:inputType="number" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
@@ -226,19 +226,19 @@
 
         </androidx.cardview.widget.CardView>
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvMerchantRegTitle"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="28dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Payment Information"-->
-<!--            android:textColor="@color/ETlabel"-->
-<!--            android:textSize="24sp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvMerchantRegTitle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="28dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Payment Information"-->
+        <!--            android:textColor="@color/ETlabel"-->
+        <!--            android:textSize="24sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

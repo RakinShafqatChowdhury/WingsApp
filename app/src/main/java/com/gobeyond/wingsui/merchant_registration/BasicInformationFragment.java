@@ -30,7 +30,6 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
     }
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,35 +57,35 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
         radioGroupBusinessType = v.findViewById(R.id.rg_business_type);
     }
 
-    private Boolean verifyFields(){
-        if(TextUtils.isEmpty(etMerchantName.getText().toString().trim())){
+    private Boolean verifyFields() {
+        if (TextUtils.isEmpty(etMerchantName.getText().toString().trim())) {
             etMerchantName.setError("Enter merchant name");
             etMerchantName.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etAddress.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etAddress.getText().toString().trim())) {
             etAddress.setError("Enter merchant address");
             etAddress.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etProductNature.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etProductNature.getText().toString().trim())) {
             etProductNature.setError("Enter product nature");
             etProductNature.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etWebsite.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etWebsite.getText().toString().trim())) {
             etWebsite.setError("Enter website address");
             etWebsite.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etFacebookPage.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etFacebookPage.getText().toString().trim())) {
             etFacebookPage.setError("Enter facebook page");
             etFacebookPage.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(etCompanyPhone.getText().toString().trim())){
+        } else if (TextUtils.isEmpty(etCompanyPhone.getText().toString().trim())) {
             etCompanyPhone.setError("Enter phone number");
             etCompanyPhone.requestFocus();
             return false;
-        }else if(radioGroupBusinessType.getCheckedRadioButtonId()==-1){
+        } else if (radioGroupBusinessType.getCheckedRadioButtonId() == -1) {
             Toast.makeText(requireActivity(), "Select business type", Toast.LENGTH_SHORT).show();
             return false;
-        }else if(!Patterns.WEB_URL.matcher(etWebsite.getText().toString().trim()).matches()){
+        } else if (!Patterns.WEB_URL.matcher(etWebsite.getText().toString().trim()).matches()) {
             etWebsite.setError("Enter valid web address");
             etWebsite.requestFocus();
             return false;
@@ -96,7 +95,7 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
 
     @Override
     public void onNextClicked(StepperLayout.OnNextClickedCallback callback) {
-        if(verifyFields()) {
+        if (verifyFields()) {
             callback.goToNextStep();
         }
     }
