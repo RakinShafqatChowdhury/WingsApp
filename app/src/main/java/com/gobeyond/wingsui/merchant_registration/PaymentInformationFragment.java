@@ -1,5 +1,6 @@
 package com.gobeyond.wingsui.merchant_registration;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -75,12 +76,15 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
                 etBank.setEnabled(false);
                 etBranch.setEnabled(false);
                 etRoutingNumber.setEnabled(false);
-                bankTIL.setBackgroundColor(getResources().getColor(R.color.grey_300));
-                branchTIL.setBackgroundColor(getResources().getColor(R.color.grey_300));
-                routingNumTIL.setBackgroundColor(getResources().getColor(R.color.grey_300));
-                etBank.setText("");
-                etBranch.setText("");
-                etRoutingNumber.setText("");
+                bankTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
+                branchTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
+                routingNumTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
+                etBank.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                etBranch.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                etRoutingNumber.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+//                etBank.setText("");
+//                etBranch.setText("");
+//                etRoutingNumber.setText("");
                 break;
             case "Bank":
                 etAccName.setEnabled(true);
@@ -88,14 +92,14 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
                 etBank.setEnabled(true);
                 etBranch.setEnabled(true);
                 etRoutingNumber.setEnabled(true);
-                etAccName.setTextInputLayoutFocusedRectEnabled(true);
-                etAccNumber.setTextInputLayoutFocusedRectEnabled(true);
-                etBank.setTextInputLayoutFocusedRectEnabled(true);
-                etBranch.setTextInputLayoutFocusedRectEnabled(true);
-                etRoutingNumber.setTextInputLayoutFocusedRectEnabled(true);
+
                 bankTIL.setBackgroundColor(getResources().getColor(R.color.white));
                 branchTIL.setBackgroundColor(getResources().getColor(R.color.white));
                 routingNumTIL.setBackgroundColor(getResources().getColor(R.color.white));
+
+                etBank.setPaintFlags(etBank.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                etBranch.setPaintFlags(etBank.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+                etRoutingNumber.setPaintFlags(etBank.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
                 break;
 
         }
@@ -136,7 +140,7 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
             }
         }
         else {
-            Toast.makeText(requireActivity(), "Please fill up the form", Toast.LENGTH_SHORT).show();
+            Toast.makeText(requireActivity(), "Select payment method", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
@@ -170,13 +174,10 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     public void onSelected() {
         getActivity().setTitle("Payment Information");
 
-        radioGroupPaymentMethod.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton radioButton = radioGroupPaymentMethod.findViewById(checkedId);
-                selectedPaymentMethod = radioButton.getText().toString();
-                activeEditTexts(selectedPaymentMethod);
-            }
+        radioGroupPaymentMethod.setOnCheckedChangeListener((group, checkedId) -> {
+            RadioButton radioButton = radioGroupPaymentMethod.findViewById(checkedId);
+            selectedPaymentMethod = radioButton.getText().toString();
+            activeEditTexts(selectedPaymentMethod);
         });
 
 

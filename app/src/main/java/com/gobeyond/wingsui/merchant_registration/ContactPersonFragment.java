@@ -19,7 +19,7 @@ import com.stepstone.stepper.VerificationError;
 
 public class ContactPersonFragment extends Fragment implements BlockingStep {
 
-    private TextInputEditText contactPersonName, designation, contactNumber, email;
+    private TextInputEditText etContactPersonName, etDesignation, etContactNumber, etEmail;
 
     public ContactPersonFragment() {
         // Required empty public constructor
@@ -45,28 +45,28 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
     }
 
     private void init(View v) {
-        contactPersonName = v.findViewById(R.id.etContactPersonNameRegistration);
-        designation = v.findViewById(R.id.etDesignationMerRegistration);
-        contactNumber = v.findViewById(R.id.etContactNumberMerRegistration);
-        email = v.findViewById(R.id.etEmailMerRegistration);
+        etContactPersonName = v.findViewById(R.id.etContactPersonNameRegistration);
+        etDesignation = v.findViewById(R.id.etDesignationMerRegistration);
+        etContactNumber = v.findViewById(R.id.etContactNumberMerRegistration);
+        etEmail = v.findViewById(R.id.etEmailMerRegistration);
     }
 
     private Boolean verifyFields(){
-        if(TextUtils.isEmpty(contactPersonName.getText().toString().trim())){
-            contactPersonName.setError("Enter name");
-            contactPersonName.requestFocus();
+        if(TextUtils.isEmpty(etContactPersonName.getText().toString().trim())){
+            etContactPersonName.setError("Enter name");
+            etContactPersonName.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(designation.getText().toString().trim())){
-            designation.setError("Enter designation");
-            designation.requestFocus();
+        }else if(TextUtils.isEmpty(etDesignation.getText().toString().trim())){
+            etDesignation.setError("Enter designation");
+            etDesignation.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(contactNumber.getText().toString().trim())){
-            contactNumber.setError("Enter contact number");
-            contactNumber.requestFocus();
+        }else if(TextUtils.isEmpty(etContactNumber.getText().toString().trim())){
+            etContactNumber.setError("Enter contact number");
+            etContactNumber.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(email.getText().toString().trim())){
-            email.setError("Enter email address");
-            email.requestFocus();
+        }else if(TextUtils.isEmpty(etEmail.getText().toString().trim())){
+            etEmail.setError("Enter email address");
+            etEmail.requestFocus();
             return false;
         }
         return true;
@@ -77,8 +77,6 @@ public class ContactPersonFragment extends Fragment implements BlockingStep {
         if(verifyFields()){
             callback.goToNextStep();
         }
-        callback.goToNextStep();
-
     }
 
     @Override

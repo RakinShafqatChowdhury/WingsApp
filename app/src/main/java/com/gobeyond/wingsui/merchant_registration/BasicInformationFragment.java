@@ -21,7 +21,7 @@ import com.stepstone.stepper.VerificationError;
 
 public class BasicInformationFragment extends Fragment implements BlockingStep {
 
-    private TextInputEditText merchantName, address, productNature, website, facebookPage, companyPhone;
+    private TextInputEditText etMerchantName, etAddress, etProductNature, etWebsite, etFacebookPage, etCompanyPhone;
     private RadioGroup radioGroupBusinessType;
 
     public BasicInformationFragment() {
@@ -48,39 +48,39 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
     }
 
     private void init(View v) {
-        merchantName = v.findViewById(R.id.etNameMerRegistration);
-        address = v.findViewById(R.id.etAddressMerRegistration);
-        productNature = v.findViewById(R.id.etProductNatureMerRegistration);
-        website = v.findViewById(R.id.etWebsiteMerRegistration);
-        facebookPage = v.findViewById(R.id.etFacebookPageMerRegistration);
-        companyPhone = v.findViewById(R.id.etCompanyPhoneMerRegistration);
+        etMerchantName = v.findViewById(R.id.etNameMerRegistration);
+        etAddress = v.findViewById(R.id.etAddressMerRegistration);
+        etProductNature = v.findViewById(R.id.etProductNatureMerRegistration);
+        etWebsite = v.findViewById(R.id.etWebsiteMerRegistration);
+        etFacebookPage = v.findViewById(R.id.etFacebookPageMerRegistration);
+        etCompanyPhone = v.findViewById(R.id.etCompanyPhoneMerRegistration);
         radioGroupBusinessType = v.findViewById(R.id.rg_business_type);
     }
 
     private Boolean verifyFields(){
-        if(TextUtils.isEmpty(merchantName.getText().toString().trim())){
-            merchantName.setError("Enter merchant name");
-            merchantName.requestFocus();
+        if(TextUtils.isEmpty(etMerchantName.getText().toString().trim())){
+            etMerchantName.setError("Enter merchant name");
+            etMerchantName.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(address.getText().toString().trim())){
-            address.setError("Enter merchant address");
-            address.requestFocus();
+        }else if(TextUtils.isEmpty(etAddress.getText().toString().trim())){
+            etAddress.setError("Enter merchant address");
+            etAddress.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(productNature.getText().toString().trim())){
-            productNature.setError("Enter product nature");
-            productNature.requestFocus();
+        }else if(TextUtils.isEmpty(etProductNature.getText().toString().trim())){
+            etProductNature.setError("Enter product nature");
+            etProductNature.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(website.getText().toString().trim())){
-            website.setError("Enter website address");
-            website.requestFocus();
+        }else if(TextUtils.isEmpty(etWebsite.getText().toString().trim())){
+            etWebsite.setError("Enter website address");
+            etWebsite.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(facebookPage.getText().toString().trim())){
-            facebookPage.setError("Enter facebook page");
-            facebookPage.requestFocus();
+        }else if(TextUtils.isEmpty(etFacebookPage.getText().toString().trim())){
+            etFacebookPage.setError("Enter facebook page");
+            etFacebookPage.requestFocus();
             return false;
-        }else if(TextUtils.isEmpty(companyPhone.getText().toString().trim())){
-            companyPhone.setError("Enter phone number");
-            companyPhone.requestFocus();
+        }else if(TextUtils.isEmpty(etCompanyPhone.getText().toString().trim())){
+            etCompanyPhone.setError("Enter phone number");
+            etCompanyPhone.requestFocus();
             return false;
         }else if(radioGroupBusinessType.getCheckedRadioButtonId()==-1){
             Toast.makeText(requireActivity(), "Select business type", Toast.LENGTH_SHORT).show();
@@ -91,11 +91,9 @@ public class BasicInformationFragment extends Fragment implements BlockingStep {
 
     @Override
     public void onNextClicked(StepperLayout.OnNextClickedCallback callback) {
-        if(verifyFields()){
+        if(verifyFields()) {
             callback.goToNextStep();
         }
-        callback.goToNextStep();
-
     }
 
     @Override
