@@ -146,14 +146,14 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
     @Override
     public void onNextClicked(StepperLayout.OnNextClickedCallback callback) {
 
+        if(verifyFields(selectedPaymentMethod)){
+            callback.goToNextStep();
+        }
     }
 
     @Override
     public void onCompleteClicked(StepperLayout.OnCompleteClickedCallback callback) {
 
-        if(verifyFields(selectedPaymentMethod)){
-            Toast.makeText(requireActivity(), "Done", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override

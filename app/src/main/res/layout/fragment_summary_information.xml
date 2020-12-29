@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".merchant_registration.MerchantRegistrationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <!--                android:background="@drawable/logo_trans">-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Merchant name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Address"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Business type"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:id="@+id/productDetailsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="District"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Thana"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Website"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Facebook page"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Company phone"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Contact person name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Designation"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Contact number"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Email"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Payment method"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Account name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Account number"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Bank"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Branch"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Routing number"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_summary_textview"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textSize="14dp" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_margin="10dp">-->
+    <!--        <Button-->
+    <!--            android:id="@+id/submitButton"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:background="@drawable/personalinfo_button"-->
+    <!--            android:fontFamily="sans-serif-condensed"-->
+    <!--            android:text="@string/submit_changes"-->
+    <!--            android:textColor="@android:color/white"-->
+    <!--            android:textSize="20sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+</ScrollView>

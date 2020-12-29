@@ -31,12 +31,16 @@ public class StepperAdapter extends AbstractFragmentStepAdapter {
             case 2:
                 return new PaymentInformationFragment();
 
+
+            case 3:
+                return new SummaryInformationFragment();
+
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 }
