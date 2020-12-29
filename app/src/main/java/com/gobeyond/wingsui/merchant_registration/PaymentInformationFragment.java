@@ -76,9 +76,9 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
                 etBank.setEnabled(false);
                 etBranch.setEnabled(false);
                 etRoutingNumber.setEnabled(false);
-                bankTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
-                branchTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
-                routingNumTIL.setBackgroundColor(getResources().getColor(R.color.grey_100));
+                bankTIL.setBackgroundColor(getResources().getColor(R.color.grey_200));
+                branchTIL.setBackgroundColor(getResources().getColor(R.color.grey_200));
+                routingNumTIL.setBackgroundColor(getResources().getColor(R.color.grey_200));
                 etBank.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                 etBranch.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                 etRoutingNumber.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);

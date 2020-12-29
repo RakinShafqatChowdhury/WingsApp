@@ -9,9 +9,8 @@
     android:theme="@style/stepper"
     app:ms_backButtonColor="@android:color/black"
     app:ms_completeButtonColor="@android:color/black"
-    app:ms_completeButtonText="Confirm"
+    app:ms_completeButtonText="Submit"
     app:ms_nextButtonColor="@android:color/black"
     app:ms_showErrorStateEnabled="true"
     app:ms_stepperType="dots"
-    app:ms_tabNavigationEnabled="true"
     />
