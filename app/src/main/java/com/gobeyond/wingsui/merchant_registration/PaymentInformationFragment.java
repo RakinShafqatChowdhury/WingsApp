@@ -82,9 +82,6 @@ public class PaymentInformationFragment extends Fragment implements BlockingStep
                 etBank.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                 etBranch.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
                 etRoutingNumber.setPaintFlags(etBank.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-//                etBank.setText("");
-//                etBranch.setText("");
-//                etRoutingNumber.setText("");
                 break;
             case "Bank":
                 etAccName.setEnabled(true);
