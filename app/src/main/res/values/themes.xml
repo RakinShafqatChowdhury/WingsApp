@@ -25,4 +25,8 @@
         <item name="ms_inactiveStepColor">@android:color/darker_gray</item>
         <item name="ms_bottomNavigationBackground">@color/white</item>
     </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
 </resources>

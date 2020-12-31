@@ -20,7 +20,6 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
-            android:padding="@dimen/_2sdp"
             app:cardElevation="10dp">
 
             <LinearLayout
@@ -63,13 +62,13 @@
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1.8"
+                        android:layout_weight="1.7"
                         android:text="Merchant reference number" />
 
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1.2"
+                        android:layout_weight="1.3"
                         android:text="Order id" />
 
                 </RadioGroup>
@@ -84,34 +83,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="2dp"
+            android:padding="5dp"
             android:weightSum="3">
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_height="100dp"
                 android:layout_marginEnd="3dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/deep_purple_400"
                 android:text="Re-attempt orders\n(0)"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="13sp" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_height="100dp"
                 android:layout_marginEnd="3dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/light_blue_900"
                 android:text="Priority orders\n(0)"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="13sp" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/light_blue_800"
                 android:text="Express orders\n(0)"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="13sp" />
 
         </LinearLayout>
 
@@ -138,8 +137,8 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:src="@drawable/drawable_report" />
 
@@ -150,7 +149,7 @@
                         android:layout_marginTop="5dp"
                         android:text="DO wise report"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_12sdp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -172,8 +171,8 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:src="@drawable/sla_missed_order" />
 
@@ -184,7 +183,7 @@
                         android:layout_marginTop="5dp"
                         android:text="SLA missed orders"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_12sdp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -201,7 +200,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -221,7 +220,7 @@
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -240,7 +239,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -260,7 +259,7 @@
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -288,7 +287,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -308,7 +307,7 @@
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -327,7 +326,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -346,7 +345,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -375,7 +374,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -394,8 +393,8 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
-                        android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -414,7 +413,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -433,7 +432,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -462,7 +461,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -481,7 +480,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -501,7 +500,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -520,7 +519,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -550,7 +549,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -569,7 +568,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -589,7 +588,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
@@ -608,7 +607,7 @@
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="@dimen/_16sdp"
+                        android:textSize="18sp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 

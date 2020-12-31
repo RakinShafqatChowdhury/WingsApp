@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WIngsUI">
-        <activity android:name=".merchant_registration.MerchantRegistrationActivity"></activity>
+        <activity android:name=".delivery_supervisor.ViewPagerActivity"></activity>
+        <activity android:name=".merchant_registration.MerchantRegistrationActivity" />
         <activity android:name=".CounterDashboardActivity" />
         <activity
             android:name=".DoDashboardActivity"
