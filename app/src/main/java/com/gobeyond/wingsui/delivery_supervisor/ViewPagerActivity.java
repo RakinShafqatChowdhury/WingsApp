@@ -1,8 +1,10 @@
 package com.gobeyond.wingsui.delivery_supervisor;
 
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -13,6 +15,8 @@ import com.gobeyond.wingsui.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+import java.util.Objects;
+
 public class ViewPagerActivity extends AppCompatActivity {
     private static final int NUM_PAGES = 4;
     private ViewPager2 viewPager;
@@ -22,10 +26,10 @@ public class ViewPagerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
-        tabLayout.setTabTextColors(getResources().getColor(R.color.grey_400),getResources().getColor(R.color.white));
-        tabLayout.setBackgroundColor(getResources().getColor(R.color.blue_600));
-        tabLayout.setSelectedTabIndicatorGravity(TabLayout.INDICATOR_GRAVITY_TOP);
+        //tabLayout.setTabTextColors(getResources().getColor(R.color.grey_400),getResources().getColor(R.color.white));
+
         // Instantiate a ViewPager2 and a PagerAdapter.
         viewPager = findViewById(R.id.viewPager);
         viewPager.setPageTransformer(new ZoomOutPageTransformer());
@@ -39,19 +43,16 @@ public class ViewPagerActivity extends AppCompatActivity {
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 if(position==0){
                     tab.setText("Home");
-                    tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
                 }else if(position==1){
                     tab.setText("Bank");
-                    tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
                 }else if(position==2){
                     tab.setText("Courier");
-                    tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
                 }else{
                     tab.setText("Expense");
-                    tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
                 }
             }
         }).attach();
+
     }
 
     private static class ScreenSlidePagerAdapter extends FragmentStateAdapter {
@@ -88,12 +89,15 @@ public class ViewPagerActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (viewPager.getCurrentItem() == 0) {
-            // If the user is currently looking at the first step, allow the system to handle the
-            // Back button. This calls finish() on this activity and pops the back stack.
             super.onBackPressed();
         } else {
-            // Otherwise, select the previous step.
-            viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+            viewPager.setCurrentItem(0);
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 }

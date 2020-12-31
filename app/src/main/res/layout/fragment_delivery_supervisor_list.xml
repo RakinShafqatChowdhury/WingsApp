@@ -15,25 +15,25 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp">
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:padding="@dimen/_2sdp"
+            app:cardElevation="@dimen/_5sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
                     android:weightSum="3">
 
                     <EditText
@@ -41,7 +41,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:drawableStart="@android:drawable/ic_menu_search"
-                        android:drawablePadding="5dp"
+                        android:drawablePadding="@dimen/_3sdp"
                         android:hint="Enter order id" />
 
                     <Button
@@ -62,13 +62,13 @@
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1.7"
+                        android:layout_weight="1.8"
                         android:text="Merchant reference number" />
 
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1.3"
+                        android:layout_weight="1.2"
                         android:text="Order id" />
 
                 </RadioGroup>
@@ -83,34 +83,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/_1sdp"
             android:weightSum="3">
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="3dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/deep_purple_400"
                 android:text="Re-attempt orders\n(0)"
-                android:textSize="13sp" />
+                android:textSize="@dimen/_10sdp" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="3dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/light_blue_900"
                 android:text="Priority orders\n(0)"
-                android:textSize="13sp" />
+                android:textSize="@dimen/_10sdp" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/_80sdp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/light_blue_800"
                 android:text="Express orders\n(0)"
-                android:textSize="13sp" />
+                android:textSize="@dimen/_10sdp" />
 
         </LinearLayout>
 
@@ -122,13 +122,13 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/green_400"
                 android:onClick="goToDODashboard"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_10sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,8 +137,8 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
                         android:layout_gravity="center"
                         android:src="@drawable/drawable_report" />
 
@@ -146,23 +146,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="@dimen/_3sdp"
                         android:text="DO wise report"
                         android:textColor="@color/color_white"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/red_400"
-                app:cardCornerRadius="10dp"
-                android:onClick="goToCounterDashboard"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_10sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,8 +170,8 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
                         android:layout_gravity="center"
                         android:src="@drawable/sla_missed_order" />
 
@@ -180,10 +179,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="@dimen/_3sdp"
                         android:text="SLA missed orders"
                         android:textColor="@color/color_white"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -193,17 +192,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_8sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -213,14 +213,14 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -228,7 +228,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Return+Counter Product"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -239,10 +239,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -252,14 +252,14 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -267,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Cash Receive"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -280,15 +280,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
 
@@ -300,14 +300,14 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
                         android:textColor="@color/color_white"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -315,7 +315,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Dp2 Not Received"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -326,10 +326,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -339,13 +339,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -354,7 +354,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Dp2 Received"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -367,17 +367,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -387,14 +387,14 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
                         android:textColor="@color/color_white"
+                        android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -402,7 +402,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Unpicked"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -413,10 +413,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -426,13 +426,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -441,7 +441,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Without Status"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -454,17 +454,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -474,13 +474,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -489,7 +489,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="On Hold"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -500,10 +500,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -513,13 +513,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -528,7 +528,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Return Request"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -541,16 +541,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp">
 
@@ -562,13 +562,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -577,7 +577,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Return"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -588,10 +588,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
                 android:layout_weight="1"
-                app:cardCornerRadius="5dp">
+                app:cardCornerRadius="@dimen/_3sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -601,13 +601,13 @@
                     android:weightSum="2">
 
                     <TextView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
                         android:layout_gravity="center"
                         android:background="@drawable/round_background"
                         android:gravity="center"
                         android:text="100"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/color_white"
                         android:textStyle="bold" />
 
@@ -616,7 +616,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Cash"
-
+                        android:textSize="@dimen/_12sdp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
