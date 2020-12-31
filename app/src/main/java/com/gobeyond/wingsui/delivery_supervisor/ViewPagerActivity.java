@@ -1,10 +1,8 @@
 package com.gobeyond.wingsui.delivery_supervisor;
 
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -21,7 +19,7 @@ public class ViewPagerActivity extends AppCompatActivity {
     private static final int NUM_PAGES = 4;
     private ViewPager2 viewPager;
     private FragmentStateAdapter pagerAdapter;
-    private final String[] titles = new String[]{"List", "Bank", "Courier", "Expense"};
+    //private final String[] titles = new String[]{"List", "Bank", "Courier", "Expense"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
